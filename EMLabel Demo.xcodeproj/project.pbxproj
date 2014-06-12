@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800D56D4194A48F700D6836D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56D3194A48F700D6836D /* Foundation.framework */; };
+		800D56D6194A48F700D6836D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56D5194A48F700D6836D /* CoreGraphics.framework */; };
+		800D56D8194A48F700D6836D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56D7194A48F700D6836D /* UIKit.framework */; };
+		800D56DE194A48F700D6836D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 800D56DC194A48F700D6836D /* InfoPlist.strings */; };
+		800D56E0194A48F700D6836D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D56DF194A48F700D6836D /* main.m */; };
+		800D56E4194A48F700D6836D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D56E3194A48F700D6836D /* AppDelegate.m */; };
+		800D56E7194A48F700D6836D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800D56E5194A48F700D6836D /* Main_iPhone.storyboard */; };
+		800D56EA194A48F700D6836D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800D56E8194A48F700D6836D /* Main_iPad.storyboard */; };
+		800D56ED194A48F700D6836D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D56EC194A48F700D6836D /* ViewController.m */; };
+		800D56EF194A48F700D6836D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 800D56EE194A48F700D6836D /* Images.xcassets */; };
+		800D56F6194A48F700D6836D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56F5194A48F700D6836D /* XCTest.framework */; };
+		800D56F7194A48F700D6836D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56D3194A48F700D6836D /* Foundation.framework */; };
+		800D56F8194A48F700D6836D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56D7194A48F700D6836D /* UIKit.framework */; };
+		800D5700194A48F700D6836D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 800D56FE194A48F700D6836D /* InfoPlist.strings */; };
+		800D5702194A48F700D6836D /* EMLabel_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D5701194A48F700D6836D /* EMLabel_DemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		800D56F9194A48F700D6836D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 800D56C8194A48F700D6836D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 800D56CF194A48F700D6836D;
+			remoteInfo = "EMLabel Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		800D56D0194A48F700D6836D /* EMLabel Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EMLabel Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		800D56D3194A48F700D6836D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		800D56D5194A48F700D6836D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		800D56D7194A48F700D6836D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		800D56DB194A48F700D6836D /* EMLabel Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMLabel Demo-Info.plist"; sourceTree = "<group>"; };
+		800D56DD194A48F700D6836D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		800D56DF194A48F700D6836D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		800D56E1194A48F700D6836D /* EMLabel Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMLabel Demo-Prefix.pch"; sourceTree = "<group>"; };
+		800D56E2194A48F700D6836D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		800D56E3194A48F700D6836D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		800D56E6194A48F700D6836D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		800D56E9194A48F700D6836D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		800D56EB194A48F700D6836D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		800D56EC194A48F700D6836D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		800D56EE194A48F700D6836D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		800D56F4194A48F700D6836D /* EMLabel DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EMLabel DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		800D56F5194A48F700D6836D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		800D56FD194A48F700D6836D /* EMLabel DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMLabel DemoTests-Info.plist"; sourceTree = "<group>"; };
+		800D56FF194A48F700D6836D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		800D5701194A48F700D6836D /* EMLabel_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMLabel_DemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800D56CD194A48F700D6836D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800D56D6194A48F700D6836D /* CoreGraphics.framework in Frameworks */,
+				800D56D8194A48F700D6836D /* UIKit.framework in Frameworks */,
+				800D56D4194A48F700D6836D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800D56F1194A48F700D6836D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800D56F6194A48F700D6836D /* XCTest.framework in Frameworks */,
+				800D56F8194A48F700D6836D /* UIKit.framework in Frameworks */,
+				800D56F7194A48F700D6836D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		800D56C7194A48F700D6836D = {
+			isa = PBXGroup;
+			children = (
+				800D56D9194A48F700D6836D /* EMLabel Demo */,
+				800D56FB194A48F700D6836D /* EMLabel DemoTests */,
+				800D56D2194A48F700D6836D /* Frameworks */,
+				800D56D1194A48F700D6836D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		800D56D1194A48F700D6836D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				800D56D0194A48F700D6836D /* EMLabel Demo.app */,
+				800D56F4194A48F700D6836D /* EMLabel DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		800D56D2194A48F700D6836D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800D56D3194A48F700D6836D /* Foundation.framework */,
+				800D56D5194A48F700D6836D /* CoreGraphics.framework */,
+				800D56D7194A48F700D6836D /* UIKit.framework */,
+				800D56F5194A48F700D6836D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		800D56D9194A48F700D6836D /* EMLabel Demo */ = {
+			isa = PBXGroup;
+			children = (
+				800D56E2194A48F700D6836D /* AppDelegate.h */,
+				800D56E3194A48F700D6836D /* AppDelegate.m */,
+				800D56E5194A48F700D6836D /* Main_iPhone.storyboard */,
+				800D56E8194A48F700D6836D /* Main_iPad.storyboard */,
+				800D56EB194A48F700D6836D /* ViewController.h */,
+				800D56EC194A48F700D6836D /* ViewController.m */,
+				800D56EE194A48F700D6836D /* Images.xcassets */,
+				800D56DA194A48F700D6836D /* Supporting Files */,
+			);
+			path = "EMLabel Demo";
+			sourceTree = "<group>";
+		};
+		800D56DA194A48F700D6836D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				800D56DB194A48F700D6836D /* EMLabel Demo-Info.plist */,
+				800D56DC194A48F700D6836D /* InfoPlist.strings */,
+				800D56DF194A48F700D6836D /* main.m */,
+				800D56E1194A48F700D6836D /* EMLabel Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		800D56FB194A48F700D6836D /* EMLabel DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				800D5701194A48F700D6836D /* EMLabel_DemoTests.m */,
+				800D56FC194A48F700D6836D /* Supporting Files */,
+			);
+			path = "EMLabel DemoTests";
+			sourceTree = "<group>";
+		};
+		800D56FC194A48F700D6836D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				800D56FD194A48F700D6836D /* EMLabel DemoTests-Info.plist */,
+				800D56FE194A48F700D6836D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		800D56CF194A48F700D6836D /* EMLabel Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800D5705194A48F700D6836D /* Build configuration list for PBXNativeTarget "EMLabel Demo" */;
+			buildPhases = (
+				800D56CC194A48F700D6836D /* Sources */,
+				800D56CD194A48F700D6836D /* Frameworks */,
+				800D56CE194A48F700D6836D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EMLabel Demo";
+			productName = "EMLabel Demo";
+			productReference = 800D56D0194A48F700D6836D /* EMLabel Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		800D56F3194A48F700D6836D /* EMLabel DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 800D5708194A48F700D6836D /* Build configuration list for PBXNativeTarget "EMLabel DemoTests" */;
+			buildPhases = (
+				800D56F0194A48F700D6836D /* Sources */,
+				800D56F1194A48F700D6836D /* Frameworks */,
+				800D56F2194A48F700D6836D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				800D56FA194A48F700D6836D /* PBXTargetDependency */,
+			);
+			name = "EMLabel DemoTests";
+			productName = "EMLabel DemoTests";
+			productReference = 800D56F4194A48F700D6836D /* EMLabel DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800D56C8194A48F700D6836D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Erik Malyak";
+				TargetAttributes = {
+					800D56F3194A48F700D6836D = {
+						TestTargetID = 800D56CF194A48F700D6836D;
+					};
+				};
+			};
+			buildConfigurationList = 800D56CB194A48F700D6836D /* Build configuration list for PBXProject "EMLabel Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 800D56C7194A48F700D6836D;
+			productRefGroup = 800D56D1194A48F700D6836D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				800D56CF194A48F700D6836D /* EMLabel Demo */,
+				800D56F3194A48F700D6836D /* EMLabel DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		800D56CE194A48F700D6836D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800D56EA194A48F700D6836D /* Main_iPad.storyboard in Resources */,
+				800D56EF194A48F700D6836D /* Images.xcassets in Resources */,
+				800D56E7194A48F700D6836D /* Main_iPhone.storyboard in Resources */,
+				800D56DE194A48F700D6836D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800D56F2194A48F700D6836D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800D5700194A48F700D6836D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		800D56CC194A48F700D6836D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800D56ED194A48F700D6836D /* ViewController.m in Sources */,
+				800D56E4194A48F700D6836D /* AppDelegate.m in Sources */,
+				800D56E0194A48F700D6836D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800D56F0194A48F700D6836D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800D5702194A48F700D6836D /* EMLabel_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		800D56FA194A48F700D6836D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 800D56CF194A48F700D6836D /* EMLabel Demo */;
+			targetProxy = 800D56F9194A48F700D6836D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		800D56DC194A48F700D6836D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800D56DD194A48F700D6836D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		800D56E5194A48F700D6836D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800D56E6194A48F700D6836D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		800D56E8194A48F700D6836D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800D56E9194A48F700D6836D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		800D56FE194A48F700D6836D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				800D56FF194A48F700D6836D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		800D5703194A48F700D6836D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		800D5704194A48F700D6836D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		800D5706194A48F700D6836D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMLabel Demo/EMLabel Demo-Prefix.pch";
+				INFOPLIST_FILE = "EMLabel Demo/EMLabel Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		800D5707194A48F700D6836D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMLabel Demo/EMLabel Demo-Prefix.pch";
+				INFOPLIST_FILE = "EMLabel Demo/EMLabel Demo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		800D5709194A48F700D6836D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMLabel Demo.app/EMLabel Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMLabel Demo/EMLabel Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EMLabel DemoTests/EMLabel DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		800D570A194A48F700D6836D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMLabel Demo.app/EMLabel Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMLabel Demo/EMLabel Demo-Prefix.pch";
+				INFOPLIST_FILE = "EMLabel DemoTests/EMLabel DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		800D56CB194A48F700D6836D /* Build configuration list for PBXProject "EMLabel Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800D5703194A48F700D6836D /* Debug */,
+				800D5704194A48F700D6836D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		800D5705194A48F700D6836D /* Build configuration list for PBXNativeTarget "EMLabel Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800D5706194A48F700D6836D /* Debug */,
+				800D5707194A48F700D6836D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		800D5708194A48F700D6836D /* Build configuration list for PBXNativeTarget "EMLabel DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800D5709194A48F700D6836D /* Debug */,
+				800D570A194A48F700D6836D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 800D56C8194A48F700D6836D /* Project object */;
+}
