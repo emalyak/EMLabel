@@ -22,6 +22,8 @@
 		800D56F8194A48F700D6836D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D56D7194A48F700D6836D /* UIKit.framework */; };
 		800D5700194A48F700D6836D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 800D56FE194A48F700D6836D /* InfoPlist.strings */; };
 		800D5702194A48F700D6836D /* EMLabel_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D5701194A48F700D6836D /* EMLabel_DemoTests.m */; };
+		800D570C194A581C00D6836D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 800D570B194A581C00D6836D /* LICENSE */; };
+		800D5712194A596A00D6836D /* EMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 800D5711194A596A00D6836D /* EMLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		800D56FD194A48F700D6836D /* EMLabel DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMLabel DemoTests-Info.plist"; sourceTree = "<group>"; };
 		800D56FF194A48F700D6836D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		800D5701194A48F700D6836D /* EMLabel_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMLabel_DemoTests.m; sourceTree = "<group>"; };
+		800D570B194A581C00D6836D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		800D5710194A596A00D6836D /* EMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLabel.h; sourceTree = "<group>"; };
+		800D5711194A596A00D6836D /* EMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,8 @@
 		800D56C7194A48F700D6836D = {
 			isa = PBXGroup;
 			children = (
+				800D570B194A581C00D6836D /* LICENSE */,
+				800D570F194A596A00D6836D /* EMLabel */,
 				800D56D9194A48F700D6836D /* EMLabel Demo */,
 				800D56FB194A48F700D6836D /* EMLabel DemoTests */,
 				800D56D2194A48F700D6836D /* Frameworks */,
@@ -153,6 +160,15 @@
 				800D56FE194A48F700D6836D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		800D570F194A596A00D6836D /* EMLabel */ = {
+			isa = PBXGroup;
+			children = (
+				800D5710194A596A00D6836D /* EMLabel.h */,
+				800D5711194A596A00D6836D /* EMLabel.m */,
+			);
+			path = EMLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +251,7 @@
 				800D56EF194A48F700D6836D /* Images.xcassets in Resources */,
 				800D56E7194A48F700D6836D /* Main_iPhone.storyboard in Resources */,
 				800D56DE194A48F700D6836D /* InfoPlist.strings in Resources */,
+				800D570C194A581C00D6836D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +272,7 @@
 			files = (
 				800D56ED194A48F700D6836D /* ViewController.m in Sources */,
 				800D56E4194A48F700D6836D /* AppDelegate.m in Sources */,
+				800D5712194A596A00D6836D /* EMLabel.m in Sources */,
 				800D56E0194A48F700D6836D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EMLabel Demo/EMLabel Demo-Prefix.pch";
 				INFOPLIST_FILE = "EMLabel Demo/EMLabel Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,6 +425,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EMLabel Demo/EMLabel Demo-Prefix.pch";
 				INFOPLIST_FILE = "EMLabel Demo/EMLabel Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,6 +490,7 @@
 				800D5707194A48F700D6836D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		800D5708194A48F700D6836D /* Build configuration list for PBXNativeTarget "EMLabel DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +499,7 @@
 				800D570A194A48F700D6836D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

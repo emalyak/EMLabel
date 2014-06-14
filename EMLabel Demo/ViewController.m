@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EMLabel.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSMutableData *pdfData = [[NSMutableData alloc] init];
+    
+    UIGraphicsBeginPDFContextToData(pdfData, CGRectZero, nil);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 612, 792), nil);
+    
+    EMLabel *demoLabel = [[EMLabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    demoLabel.text = @"this is a test";
+    demoLabel.adjustsFontSizeToFitWidth = YES;
+    demoLabel.textColor = [UIColor whiteColor];
+    demoLabel.textAlignment = NSTextAlignmentCenter;
+    demoLabel.backgroundColor = [UIColor grayColor];
+    
+    [demoLabel drawInContext:context];
+    
+    UIGraphicsEndPDFContext();
+    
+    [self.webView loadData:pdfData MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
