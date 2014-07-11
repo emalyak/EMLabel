@@ -24,26 +24,26 @@
  
  */
 
-@interface EMLabel : NSObject
-
 typedef NS_ENUM(NSInteger, EMLabelVerticalAlignment) {
     EMLabelVerticalAlignmentTop,
     EMLabelVerticalAlignmentMiddle,
     EMLabelVerticalAlignmentBottom
 };
 
-@property(nonatomic, strong) NSString *text;
+@interface EMLabel : NSObject
 
-@property(nonatomic, strong) UIFont *font;
-@property(nonatomic, strong) UIColor *textColor;
-@property(nonatomic, strong) UIColor *backgroundColor;
+@property(nonatomic, strong) NSString *text; // Default is nil
 
-@property(nonatomic) NSTextAlignment textAlignment;
-@property(nonatomic) EMLabelVerticalAlignment verticalAlignment;
+@property(nonatomic, strong) UIFont *font; // Default is nil with system font and size of 17.0
+@property(nonatomic, strong) UIColor *textColor; // Default is nil with black color
+@property(nonatomic, strong) UIColor *backgroundColor; // Default is nil with no background color (clear)
 
-@property(nonatomic) BOOL adjustsFontSizeToFitWidth;
+@property(nonatomic) NSTextAlignment textAlignment; // Default is NSTextAlignmentLeft
+@property(nonatomic) EMLabelVerticalAlignment verticalAlignment; // Default is EMLabelVerticalAlignmentMiddle
 
-@property(nonatomic) CGRect frame;
+@property(nonatomic) BOOL adjustsFontSizeToFitWidth; // Default is NO
+
+@property(nonatomic) CGRect frame; // Default is nil
 
 - (id)initWithFrame: (CGRect)frame;
 - (void)drawInContext: (CGContextRef)context;
