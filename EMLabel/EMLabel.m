@@ -97,7 +97,7 @@ static CTFrameRef CFAttributedStringCreateFrame(CFAttributedStringRef attributed
     
     CGSize frameSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0, 0), NULL, frame.size, NULL);
     frameSize = CGSizeMake(frame.size.width, frameSize.height);
-    CGRect adjustedFrame = RectWithVerticalAlignment(frameSize, frame, EMLabelVerticalAlignmentMiddle);
+    CGRect adjustedFrame = RectWithVerticalAlignment(frameSize, frame, verticalAlignment);
     
     // Create text frame for path
     CGPathRef path = CGPathCreateWithRect(adjustedFrame, NULL);
@@ -178,7 +178,7 @@ static inline CTTextAlignment CTTextAlignmentFromNSTextAlignment(NSTextAlignment
     CFRelease(attributes);
     
     // Create and draw frame
-    CTFrameRef textFrame = CFAttributedStringCreateFrame(attributedString, EMLabelVerticalAlignmentMiddle, self.frame, self.adjustsFontSizeToFitWidth);
+    CTFrameRef textFrame = CFAttributedStringCreateFrame(attributedString, self.verticalAlignment, self.frame, self.adjustsFontSizeToFitWidth);
     CFRelease(attributedString);
     CTFrameDraw(textFrame, context);
     CFRelease(textFrame);
