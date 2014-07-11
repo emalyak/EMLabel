@@ -132,7 +132,7 @@ static inline CTTextAlignment CTTextAlignmentFromNSTextAlignment(NSTextAlignment
         self.textColor = [UIColor blackColor];
         self.textAlignment = NSTextAlignmentLeft;
         self.verticalAlignment = EMLabelVerticalAlignmentMiddle;
-        self.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:12.0];
+        self.font = [UIFont systemFontOfSize:17.0];
     }
     return self;
 }
