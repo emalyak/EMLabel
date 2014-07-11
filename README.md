@@ -4,12 +4,12 @@ EMLabel is a simple class that makes drawing text in a Core Graphics context eas
 
 ## Usage ##
 First, include the EMLabel header wherever you wish to use the class:
-```
+```objc
 #import "EMLabel.h"
 ```
 
 Next, create and initialize an EMLabel object with its frame, set its attributes, and draw it on your context:
-```
+```objc
 // Make sure you get the current Core Graphics context
 CGContextRef context = UIGraphicsGetCurrentContext();
 
