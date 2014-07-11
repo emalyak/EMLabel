@@ -3,7 +3,7 @@
 EMLabel is a simple class that makes drawing text in a Core Graphics context easier and more readable. Instead of using the Core Text framework, you can use an Objective-C class that has similar functionality to UILabel. For example, a great application for EMLabel is drawing text when generating PDFs with Core Graphics.
 
 ## Usage ##
-First, include the EMLabel header wherever you wish to use the class:
+First, add the [EMLabel files](EMLabel) to your project and include the EMLabel header wherever you wish to use the class:
 ```objc
 #import "EMLabel.h"
 ```
