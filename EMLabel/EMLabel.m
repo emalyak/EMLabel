@@ -176,33 +176,36 @@ static inline CTTextAlignment CTTextAlignmentFromNSTextAlignment(NSTextAlignment
         CGContextFillRect(context, self.frame);
     }
     
-    CGContextScaleCTM(context, 1.0, -1.0);
-    CGContextSetTextMatrix(context, CGAffineTransformIdentity);
-    
-    CTTextAlignment alignment = CTTextAlignmentFromNSTextAlignment(self.textAlignment);
-    CTParagraphStyleSetting settings[] = { kCTParagraphStyleSpecifierAlignment, sizeof(alignment), &alignment} ;
-    CTParagraphStyleRef paragraphStyle = CTParagraphStyleCreate(settings, sizeof(settings) / sizeof(settings[0]));
-    
-    // Turn label values into attributed string
-    CFStringRef keys[] = { kCTFontAttributeName, kCTForegroundColorAttributeName, kCTParagraphStyleAttributeName };
-    CFTypeRef values[] = { (__bridge CTFontRef)(self.font), CGColorCreateCopy([self.textColor CGColor]), paragraphStyle };
-    
-    CFDictionaryRef attributes =
-    CFDictionaryCreate(NULL, (const void**)&keys,
-                       (const void**)&values, sizeof(keys) / sizeof(keys[0]),
-                       &kCFTypeDictionaryKeyCallBacks,
-                       &kCFTypeDictionaryValueCallBacks);
-    CFRelease(paragraphStyle);
-    
-    CFAttributedStringRef attributedString = CFAttributedStringCreate(NULL, (__bridge CFStringRef)self.text, attributes);
-    CFRelease(attributes);
-    
-    // Create and draw frame
-    CTFrameRef textFrame = CFAttributedStringCreateFrame(attributedString, self.verticalAlignment, self.frame, self.adjustsFontSizeToFitWidth);
-    CFRelease(attributedString);
-    
-    CTFrameDraw(textFrame, context);
-    CFRelease(textFrame);
+    if (self.text.length > 0)
+    {
+        CGContextScaleCTM(context, 1.0, -1.0);
+        CGContextSetTextMatrix(context, CGAffineTransformIdentity);
+        
+        CTTextAlignment alignment = CTTextAlignmentFromNSTextAlignment(self.textAlignment);
+        CTParagraphStyleSetting settings[] = { kCTParagraphStyleSpecifierAlignment, sizeof(alignment), &alignment} ;
+        CTParagraphStyleRef paragraphStyle = CTParagraphStyleCreate(settings, sizeof(settings) / sizeof(settings[0]));
+        
+        // Turn label values into attributed string
+        CFStringRef keys[] = { kCTFontAttributeName, kCTForegroundColorAttributeName, kCTParagraphStyleAttributeName };
+        CFTypeRef values[] = { (__bridge CTFontRef)(self.font), CGColorCreateCopy([self.textColor CGColor]), paragraphStyle };
+        
+        CFDictionaryRef attributes =
+        CFDictionaryCreate(NULL, (const void**)&keys,
+                           (const void**)&values, sizeof(keys) / sizeof(keys[0]),
+                           &kCFTypeDictionaryKeyCallBacks,
+                           &kCFTypeDictionaryValueCallBacks);
+        CFRelease(paragraphStyle);
+        
+        CFAttributedStringRef attributedString = CFAttributedStringCreate(NULL, (__bridge CFStringRef)self.text, attributes);
+        CFRelease(attributes);
+        
+        // Create and draw frame
+        CTFrameRef textFrame = CFAttributedStringCreateFrame(attributedString, self.verticalAlignment, self.frame, self.adjustsFontSizeToFitWidth);
+        CFRelease(attributedString);
+        
+        CTFrameDraw(textFrame, context);
+        CFRelease(textFrame);
+    }
     
     CGContextRestoreGState(context);
 }
