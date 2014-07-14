@@ -60,7 +60,7 @@ static const int leftMargin = 40;
     
     CGRect descriptionLabelFrame = CGRectMake(leftMargin, 140, pageWidth - leftMargin - rightMargin, 130);
     EMLabel *descriptionLabel = [[EMLabel alloc] initWithFrame:descriptionLabelFrame];
-    descriptionLabel.text = @"EMLabel is a simple class that makes drawing text in a Core Graphics context easier and more readable. Instead of using the Core Text framework, you can use an Objective-C class that has similar functionality to UILabel.\n\n EMLabel has some nifty features...";
+    descriptionLabel.text = @"EMLabel is a simple class that makes drawing text in a Core Graphics context easier and more readable. Instead of using the Core Text framework, you can use an Objective-C class that has similar functionality to UILabel.\n\nEMLabel has some nifty features...";
     [descriptionLabel drawInContext:context];
     
     
@@ -76,7 +76,7 @@ static const int leftMargin = 40;
     
     CGRect fitLabelFrame = CGRectMake(leftMargin, 550, pageWidth - leftMargin - rightMargin, 40);
     EMLabel *fitLabel = [[EMLabel alloc] initWithFrame:fitLabelFrame];
-    fitLabel.text = @"If your text exceeds the boundaries of the label, the font size can automatically adjust to fit it.";
+    fitLabel.text = @"If your text exceeds the boundaries of the label, EMLabel can automatically scale the font size to fit it all.";
     fitLabel.textColor = [UIColor whiteColor];
     fitLabel.textAlignment = NSTextAlignmentCenter;
     fitLabel.backgroundColor = [UIColor grayColor];
