@@ -186,13 +186,13 @@ static inline CTTextAlignment CTTextAlignmentFromNSTextAlignment(NSTextAlignment
     // Turn label values into attributed string
     CFStringRef keys[] = { kCTFontAttributeName, kCTForegroundColorAttributeName, kCTParagraphStyleAttributeName };
     CFTypeRef values[] = { (__bridge CTFontRef)(self.font), CGColorCreateCopy([self.textColor CGColor]), paragraphStyle };
-    CFRelease(paragraphStyle);
     
     CFDictionaryRef attributes =
     CFDictionaryCreate(NULL, (const void**)&keys,
                        (const void**)&values, sizeof(keys) / sizeof(keys[0]),
                        &kCFTypeDictionaryKeyCallBacks,
                        &kCFTypeDictionaryValueCallBacks);
+    CFRelease(paragraphStyle);
     
     CFAttributedStringRef attributedString = CFAttributedStringCreate(NULL, (__bridge CFStringRef)self.text, attributes);
     CFRelease(attributes);
