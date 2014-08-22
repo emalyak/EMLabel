@@ -24,6 +24,9 @@
  
  */
 
+#import <UIKit/UIKit.h>
+
+
 typedef NS_ENUM(NSInteger, EMLabelVerticalAlignment) {
     EMLabelVerticalAlignmentTop,
     EMLabelVerticalAlignmentMiddle,
